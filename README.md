@@ -2,6 +2,12 @@
 
 An end-to-end **AI-powered Resume Screening System** that automatically analyzes and ranks resumes against a job description using **NLP** and **Machine Learning** techniques.
 
+## 🌐 Live Demo
+
+**Try the app:** [AI Resume Screener](https://ai-resume-screening-system-t8do.onrender.com/)
+
+The live app is publicly accessible. The source repository is public as well. The free hosting service may take around 50 seconds to wake after a period of inactivity.
+
 ---
 
 ## ✨ Features
