@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ai-resume-screening-system
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python -m nltk.downloader -q -d nltk_data punkt stopwords wordnet punkt_tab
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120 app:app
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: NLTK_DATA
+        value: /opt/render/project/src/nltk_data
